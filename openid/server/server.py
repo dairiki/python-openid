@@ -1487,7 +1487,7 @@ class Server(object):
         else:
             response = oserver.handleRequest(request)
 
-        webresponse = oserver.encode(response)
+        webresponse = oserver.encodeResponse(response)
 
     @ivar signatory: I'm using this for associate requests and to sign things.
     @type signatory: L{Signatory}
